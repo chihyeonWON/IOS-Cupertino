@@ -19,3 +19,9 @@ CupertinoSwitch, CupertinoButton 등을 사용합니다.
 머터리얼 디자인의 AppBar에 대응되는 CupertinoNavigationBar를 사용하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210199025-ac6bd920-1efd-4985-908e-234e5fa419cf.png)
+
+#### CupertinoSwitch
+```
+머터리얼 디자인의 Switch에 대응되는 CupertinoSwitch를 사용하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210199181-3a25fd19-9585-4113-8674-306b73182f20.png)
