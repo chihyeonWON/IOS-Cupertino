@@ -25,3 +25,9 @@ CupertinoSwitch, CupertinoButton 등을 사용합니다.
 머터리얼 디자인의 Switch에 대응되는 CupertinoSwitch를 사용하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210199181-3a25fd19-9585-4113-8674-306b73182f20.png)
+
+#### CupertinoButton
+```
+머터리얼 디자인의 ElevatedButton에 대응되는 CupertinoButton을 사용하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210199432-d8cc258f-825b-4d5e-a32a-154a658d3031.png)
