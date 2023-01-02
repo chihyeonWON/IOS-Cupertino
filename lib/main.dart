@@ -29,6 +29,18 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar:CupertinoNavigationBar( // 머터리얼 AppBar에 대응
         middle:Text('4.10 쿠퍼티노 디자인'), // 머터리얼 AppBar의 title에 대응
       ),
+      body:Column(
+        children:<Widget>[
+          CupertinoSwitch(
+            value:_isOn,
+            onChanged:(bool value) { // Switch에 대응
+              setState(() {
+                _isOn = value;
+              });
+            }
+          )
+        ]
+      )
     );
   }
 }
