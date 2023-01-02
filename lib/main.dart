@@ -37,10 +37,24 @@ class _MyHomePageState extends State<MyHomePage> {
               setState(() {
                 _isOn = value;
               });
-            }
-          )
-        ]
-      )
+            },
+          ),
+          CupertinoButton( // ElevatedButton에 대응
+            borderRadius: BorderRadius.circular(16.0),
+            color:Colors.orange,
+            child:Text('쿠퍼티노 AlertDialog'),
+            onPressed: (){
+              // 클릭 이벤트
+            },
+          ),
+          CupertinoButton(
+            child:Text('쿠퍼티노 Picker'),
+            onPressed: (){
+              // 클릭 이벤트
+            },
+          ),
+        ],
+      ),
     );
   }
 }
