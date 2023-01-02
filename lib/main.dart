@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
             color:Colors.orange,
             child:Text('쿠퍼티노 AlertDialog'),
             onPressed: (){
-              // 클릭 이벤트
+              _showCupertinoDialog();
             },
           ),
           CupertinoButton(
@@ -56,6 +56,26 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
     );
+  }
+  _showCupertinoDialog() {
+   showDialog(
+       context: context,
+       builder: (context) => CupertinoAlertDialog(
+     title:Text('제목'),
+     content:Text('내용'),
+     actions:<Widget>[
+       CupertinoDialogAction(
+         child:Text('Cancel'),
+       ),
+       CupertinoDialogAction(
+         child:Text('Ok'),
+         onPressed: (){
+           Navigator.of(context).pop(); //다이얼로그 닫기
+         },
+       ),
+     ],
+   ),
+   );
   }
 }
 
