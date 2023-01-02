@@ -38,3 +38,11 @@ CupertinoSwitch, CupertinoButton 등을 사용합니다.
 위에서 만든 CupertinoButton을 눌렀을 때 AlertDialog가 발생하도록 함수를 만들어서 넣어주었습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210200269-410e04a4-d16b-413b-9e4f-bbaa5b8056f9.png)
+
+#### CupertinoPicker
+```
+IOS에서 자주 사용되는 피커입니다.
+위 아래로 스크롤하고 피커 바깥을 클릭하면 선택한 값이 적용되도록 하였습니다.
+피커가 닫힐때 까지 await 한 후 선택한 값이 result 변수에 최종적으로 저장됩니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210200797-0e21cd89-5855-4f7c-a086-9e544e103b6d.png)
