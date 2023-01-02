@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           CupertinoButton(
             child:Text('쿠퍼티노 Picker'),
             onPressed: (){
-              // 클릭 이벤트
+              _showCupertinoPicker();
             },
           ),
         ],
@@ -76,6 +76,26 @@ class _MyHomePageState extends State<MyHomePage> {
      ],
    ),
    );
+  }
+
+  _showCupertinoPicker() async { // await를 사용하려면 메서드 선언 시 async 키워드 사용
+    //0부터 9까지의 숫자 리스트 생성
+    final _items = List.generate(10, (i) => i);
+    var result = _items[0]; // 기본값 0
+
+    await showCupertinoModalPopup(
+        context: context,
+        builder: (context) => Container(
+          height:200.0, // 피커의 높이는 200,
+          child:CupertinoPicker(
+            children:_items.map((e) => Text('No. $e')).toList(), // 0부터 9까지의 숫자 표시
+            itemExtent:50.0, // 항목 1개의 높이는 50
+            onSelectedItemChanged: (int value) {
+              result = _items[value]; // 선택한 값이 result 변수에 저장
+            },
+          ),
+        ),
+    );
   }
 }
 
