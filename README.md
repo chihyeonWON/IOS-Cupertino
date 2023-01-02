@@ -31,3 +31,10 @@ CupertinoSwitch, CupertinoButton 등을 사용합니다.
 머터리얼 디자인의 ElevatedButton에 대응되는 CupertinoButton을 사용하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210199432-d8cc258f-825b-4d5e-a32a-154a658d3031.png)
+
+#### CupertinoAlertDialog
+```
+머터리얼 디자인의 AlertDialog에 대응되는 CupertinoAlertDialog를 사용하였습니다.
+위에서 만든 CupertinoButton을 눌렀을 때 AlertDialog가 발생하도록 함수를 만들어서 넣어주었습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210200269-410e04a4-d16b-413b-9e4f-bbaa5b8056f9.png)
