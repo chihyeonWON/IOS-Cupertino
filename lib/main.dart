@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Cupertino',
       theme: ThemeData(
         primarySwatch:Colors.blue,
       ),
@@ -22,9 +22,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  var _isOn = false;
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar:CupertinoNavigationBar( // 머터리얼 AppBar에 대응
+        middle:Text('4.10 쿠퍼티노 디자인'), // 머터리얼 AppBar의 title에 대응
+      ),
+    );
   }
 }
 
